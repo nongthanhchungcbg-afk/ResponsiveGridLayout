@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bố cục responsive bằng CSS Grid gồm header, navigation, main content, sidebar và footer.">
+    <title>Bố cục responsive bằng CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <header class="header" id="top">
+            <a class="brand" href="#top"><span aria-hidden="true">N</span> NORTH / NOTES</a>
+            <p>Ý TƯỞNG CHO CUỘC SỐNG THƯỜNG NGÀY</p>
+            <a class="header-link" href="#contact">Đăng ký <span aria-hidden="true">↗</span></a>
+        </header>
+
+        <nav class="navigation" aria-label="Điều hướng chính">
+            <p class="nav-label">CHỦ ĐỀ</p>
+            <a class="selected" href="#main"><span>01</span> Không gian</a>
+            <a href="#story"><span>02</span> Cuộc sống</a>
+            <a href="#notes"><span>03</span> Ghi chú</a>
+            <div class="nav-decoration" aria-hidden="true">Nº<br>12</div>
+        </nav>
+
+        <main class="main" id="main">
+            <section class="feature">
+                <div class="feature-copy">
+                    <p class="eyebrow"><span></span> THIẾT KẾ / 6 PHÚT ĐỌC</p>
+                    <h1>Một không gian<br>cho <em>những ý tưởng.</em></h1>
+                    <p class="description">Không cần một căn phòng hoàn hảo. Chỉ cần một góc nhỏ khiến bạn muốn dừng lại, quan sát và bắt đầu.</p>
+                    <a href="#story" class="read-link">Đọc câu chuyện <span aria-hidden="true">⟶</span></a>
+                </div>
+                <div class="feature-art" role="img" aria-label="Minh họa một căn phòng ấm áp với cửa sổ, cây xanh và chiếc ghế">
+                    <div class="window"></div>
+                    <div class="plant"><span></span><span></span><span></span></div>
+                    <div class="chair"></div>
+                    <span class="art-note">MAKE ROOM<br>FOR GOOD IDEAS</span>
+                </div>
+            </section>
+
+            <section class="story" id="story">
+                <div class="story-heading">
+                    <p class="eyebrow">TỪ CUỘC SỐNG</p>
+                    <span>GHI CHÚ Nº 12</span>
+                </div>
+                <h2>Ít đi một chút, để thấy được nhiều hơn.</h2>
+                <p>Một chiếc bàn gọn gàng, ánh nắng buổi sáng, một tách trà còn ấm. Đôi khi cảm hứng chỉ cần một lời mời thật giản dị.</p>
+                <a href="#contact" aria-label="Tìm hiểu thêm">↗</a>
+            </section>
+
+            <aside class="sidebar" id="notes">
+                <p class="eyebrow">GÓC ĐỌC NHANH</p>
+                <h2>Ba cách làm mới góc làm việc</h2>
+                <ul>
+                    <li><span>01</span> Đưa ánh sáng tự nhiên vào.</li>
+                    <li><span>02</span> Chỉ giữ những gì bạn cần.</li>
+                    <li><span>03</span> Để trống một khoảng cho ý tưởng.</li>
+                </ul>
+                <div class="sidebar-bottom"><span aria-hidden="true">✳</span> 3 phút đọc</div>
+            </aside>
+        </main>
+
+        <footer class="footer" id="contact">
+            <a class="brand footer-brand" href="#top"><span aria-hidden="true">N</span> NORTH / NOTES</a>
+            <p>Mỗi ngày, một góc nhìn mới.</p>
+            <small>© 2026 NORTH NOTES</small>
+        </footer>
+    </div>
+</body>
+</html>
